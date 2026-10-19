@@ -1,0 +1,7 @@
+gamma,accuracy_pct,condition,auxiliary_lr_policy
+0.0,67.29999780654907,tinyvit5m_imagenet100_lrrobust_muon_lr0p01,scheduled_to_common_absolute_floor
+0.1,69.23999786376953,tv5m_in100_marsgamma_lr0p01_g0p1,fixed_internal
+0.2,72.71999716758728,tv5m_in100_marsgamma_lr0p01_g0p2,fixed_internal
+0.35,80.33999800682068,tinyvit5m_imagenet100_lrrobust_graddiff_lr0p01,fixed_internal
+0.5,81.58000111579895,tv5m_in100_marsgamma_lr0p01_g0p5,fixed_internal
+0.75,83.06000232696533,tv5m_in100_marsgamma_lr0p01_g0p75,fixed_internal

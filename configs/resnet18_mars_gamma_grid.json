@@ -1,0 +1,2444 @@
+{
+  "seeds": [
+    42
+  ],
+  "device": "cuda",
+  "wandb": {
+    "enabled": false,
+    "project": "mlopt-resnet18-fixedaux-mars-20260919",
+    "run_name": null
+  },
+  "active_experiments": [
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed44",
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed42",
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed43",
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed44"
+  ],
+  "experiment_groups": {
+    "clean_mars_grid": [
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed42",
+        "seed": 42,
+        "lr": 0.005,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed43",
+        "seed": 43,
+        "lr": 0.005,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed44",
+        "seed": 44,
+        "lr": 0.005,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed42",
+        "seed": 42,
+        "lr": 0.005,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed43",
+        "seed": 43,
+        "lr": 0.005,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed44",
+        "seed": 44,
+        "lr": 0.005,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed42",
+        "seed": 42,
+        "lr": 0.01,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed43",
+        "seed": 43,
+        "lr": 0.01,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed44",
+        "seed": 44,
+        "lr": 0.01,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed42",
+        "seed": 42,
+        "lr": 0.01,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed43",
+        "seed": 43,
+        "lr": 0.01,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed44",
+        "seed": 44,
+        "lr": 0.01,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed42",
+        "seed": 42,
+        "lr": 0.02,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed43",
+        "seed": 43,
+        "lr": 0.02,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed44",
+        "seed": 44,
+        "lr": 0.02,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed42",
+        "seed": 42,
+        "lr": 0.02,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed43",
+        "seed": 43,
+        "lr": 0.02,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed44",
+        "seed": 44,
+        "lr": 0.02,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed42",
+        "seed": 42,
+        "lr": 0.04,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed43",
+        "seed": 43,
+        "lr": 0.04,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed44",
+        "seed": 44,
+        "lr": 0.04,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed42",
+        "seed": 42,
+        "lr": 0.04,
+        "gamma": 0.25
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed43",
+        "seed": 43,
+        "lr": 0.04,
+        "gamma": 0.25
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed44",
+        "seed": 44,
+        "lr": 0.04,
+        "gamma": 0.25
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed42",
+        "seed": 42,
+        "lr": 0.04,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed43",
+        "seed": 43,
+        "lr": 0.04,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed44",
+        "seed": 44,
+        "lr": 0.04,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed42",
+        "seed": 42,
+        "lr": 0.04,
+        "gamma": 0.75
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed43",
+        "seed": 43,
+        "lr": 0.04,
+        "gamma": 0.75
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed44",
+        "seed": 44,
+        "lr": 0.04,
+        "gamma": 0.75
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed42",
+        "seed": 42,
+        "lr": 0.08,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed43",
+        "seed": 43,
+        "lr": 0.08,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed44",
+        "seed": 44,
+        "lr": 0.08,
+        "gamma": 0.0
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed42",
+        "seed": 42,
+        "lr": 0.08,
+        "gamma": 0.25
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed43",
+        "seed": 43,
+        "lr": 0.08,
+        "gamma": 0.25
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed44",
+        "seed": 44,
+        "lr": 0.08,
+        "gamma": 0.25
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed42",
+        "seed": 42,
+        "lr": 0.08,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed43",
+        "seed": 43,
+        "lr": 0.08,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed44",
+        "seed": 44,
+        "lr": 0.08,
+        "gamma": 0.5
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed42",
+        "seed": 42,
+        "lr": 0.08,
+        "gamma": 0.75
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed43",
+        "seed": 43,
+        "lr": 0.08,
+        "gamma": 0.75
+      },
+      {
+        "experiment": "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed44",
+        "seed": 44,
+        "lr": 0.08,
+        "gamma": 0.75
+      }
+    ]
+  },
+  "experiments": {
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.005,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.005,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p005_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.005,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.005,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.005,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p005_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.005,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p01_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p01_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.02,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.02,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p02_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.02,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.02,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.02,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p02_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.02,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p04_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.25,
+        "gamma_end": 0.25,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.25,
+        "gamma_end": 0.25,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p04_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.25,
+        "gamma_end": 0.25,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p04_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p04_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.04,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0_lr0p08_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.0,
+        "gamma_end": 0.0,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.25,
+        "gamma_end": 0.25,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.25,
+        "gamma_end": 0.25,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p25_lr0p08_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.25,
+        "gamma_end": 0.25,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p5_lr0p08_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed42": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed43": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "r18_c100_fixedaux_coslr_mars_g0p75_lr0p08_seed44": {
+      "optimizer": {
+        "name": "muon_graddiff",
+        "lr": 0.08,
+        "weight_decay": 0.0005,
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0
+      },
+      "model": {
+        "name": "resnet18",
+        "num_classes": 100
+      },
+      "dataset": {
+        "name": "cifar100",
+        "root": "./data",
+        "batch_size": 128,
+        "num_workers": 4,
+        "recipe": "base"
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "trainer": "clf",
+        "metrics_to_log": [
+          "Train Accuracy",
+          "Test Accuracy",
+          "Test Loss",
+          "VR Loss"
+        ]
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    }
+  },
+  "design": {
+    "purpose": "Clean MARS ablation with fixed auxiliary AdamW settings",
+    "primary_lr_grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.04,
+      0.08
+    ],
+    "primary_gammas": [
+      0.0,
+      0.5
+    ],
+    "gamma_sweep_lrs": [
+      0.04,
+      0.08
+    ],
+    "gamma_sweep": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "unique_conditions": 14,
+    "single_seed_runs": 42
+  }
+}

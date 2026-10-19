@@ -1,0 +1,5127 @@
+{
+  "seeds": [
+    42
+  ],
+  "device": "cuda",
+  "wandb": {
+    "enabled": false,
+    "project": "mlopt-tinyvit5m-mechanism-followups",
+    "run_name": null
+  },
+  "active_experiments": [
+    "tv5m_in100_coslr0025_const_b098_seed42",
+    "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed42",
+    "tv5m_in100_coslr0025_const_b098_seed43",
+    "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed43",
+    "tv5m_in100_coslr0025_const_b098_seed44",
+    "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed44",
+    "tv5m_in100_marsgamma_lr0p01_g0p1_seed42",
+    "tv5m_in100_marsgamma_lr0p01_g0p2_seed42",
+    "tv5m_in100_marsgamma_lr0p01_g0p5_seed42",
+    "tv5m_in100_marsgamma_lr0p01_g0p75_seed42",
+    "tv5m_in100_constlr0025_marsg035_const_b098_seed42",
+    "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed42",
+    "tv5m_in100_constlr0025_marsg035_const_b098_seed43",
+    "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed43",
+    "tv5m_in100_constlr0025_marsg035_const_b098_seed44",
+    "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed44",
+    "tv5m_in100_coslr0025_marsg035_const_b098_seed42",
+    "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed42",
+    "tv5m_in100_coslr0025_marsg035_const_b098_seed43",
+    "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed43",
+    "tv5m_in100_coslr0025_marsg035_const_b098_seed44",
+    "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed44",
+    "mu2diag_tv5m_lr0p01_b0p5_a0_fixed_confirm_seed43",
+    "mu2diag_tv5m_lr0p01_b0p5_a0_fixed_confirm_seed44",
+    "mu2diag_tv5m_lr0p01_b0p5_a0p2_fixed_confirm_seed43",
+    "mu2diag_tv5m_lr0p01_b0p5_a0p2_fixed_confirm_seed44",
+    "mu2diag_tv5m_lr0p01_b0p9_a0_fixed_confirm_seed43",
+    "mu2diag_tv5m_lr0p01_b0p9_a0_fixed_confirm_seed44",
+    "mu2diag_tv5m_lr0p01_b0p9_a0p2_fixed_confirm_seed43",
+    "mu2diag_tv5m_lr0p01_b0p9_a0p2_fixed_confirm_seed44",
+    "mu2diag_tv5m_lr0p01_b0p95_a0_fixed_confirm_seed43",
+    "mu2diag_tv5m_lr0p01_b0p95_a0_fixed_confirm_seed44",
+    "mu2diag_tv5m_lr0p01_b0p95_a0p2_fixed_confirm_seed43",
+    "mu2diag_tv5m_lr0p01_b0p95_a0p2_fixed_confirm_seed44",
+    "tv5m_in100_coslr01_marsg035_b09_seed42",
+    "tv5m_in100_coslr01_marsg035_b09_seed43",
+    "tv5m_in100_coslr01_marsg035_b09_seed44"
+  ],
+  "experiment_groups": {
+    "lr_momentum_factorial": [
+      {
+        "experiment": "tv5m_in100_coslr0025_const_b098_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_const_b098_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_const_b098_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed44",
+        "seed": 44
+      }
+    ],
+    "mars_gamma_sweep": [
+      {
+        "experiment": "tv5m_in100_marsgamma_lr0p01_g0p1_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_marsgamma_lr0p01_g0p2_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_marsgamma_lr0p01_g0p5_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_marsgamma_lr0p01_g0p75_seed42",
+        "seed": 42
+      }
+    ],
+    "mars_momentum_factorial": [
+      {
+        "experiment": "tv5m_in100_constlr0025_marsg035_const_b098_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_constlr0025_marsg035_const_b098_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_constlr0025_marsg035_const_b098_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_marsg035_const_b098_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_marsg035_const_b098_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_marsg035_const_b098_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed44",
+        "seed": 44
+      }
+    ],
+    "stressed_lr_mechanism_confirmation": [
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p5_a0_fixed_confirm_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p5_a0_fixed_confirm_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p5_a0p2_fixed_confirm_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p5_a0p2_fixed_confirm_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p9_a0_fixed_confirm_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p9_a0_fixed_confirm_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p9_a0p2_fixed_confirm_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p9_a0p2_fixed_confirm_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p95_a0_fixed_confirm_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p95_a0_fixed_confirm_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p95_a0p2_fixed_confirm_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "mu2diag_tv5m_lr0p01_b0p95_a0p2_fixed_confirm_seed44",
+        "seed": 44
+      },
+      {
+        "experiment": "tv5m_in100_coslr01_marsg035_b09_seed42",
+        "seed": 42
+      },
+      {
+        "experiment": "tv5m_in100_coslr01_marsg035_b09_seed43",
+        "seed": 43
+      },
+      {
+        "experiment": "tv5m_in100_coslr01_marsg035_b09_seed44",
+        "seed": 44
+      }
+    ]
+  },
+  "experiments": {
+    "tv5m_in100_coslr0025_const_b098_seed42": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_momentum_decay_adamw",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed42": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_momentum_decay_adamw",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_const_b098_seed43": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_momentum_decay_adamw",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed43": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_momentum_decay_adamw",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_const_b098_seed44": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_momentum_decay_adamw",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_late_b098_b050_e36_e48_seed44": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_momentum_decay_adamw",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_marsgamma_lr0p01_g0p1_seed42": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.95,
+        "gamma": 0.1,
+        "gamma_end": 0.1,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_marsgamma_lr0p01_g0p2_seed42": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.95,
+        "gamma": 0.2,
+        "gamma_end": 0.2,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_marsgamma_lr0p01_g0p5_seed42": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.95,
+        "gamma": 0.5,
+        "gamma_end": 0.5,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_marsgamma_lr0p01_g0p75_seed42": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.95,
+        "gamma": 0.75,
+        "gamma_end": 0.75,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_constlr0025_marsg035_const_b098_seed42": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": null
+      }
+    },
+    "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed42": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": null
+      }
+    },
+    "tv5m_in100_constlr0025_marsg035_const_b098_seed43": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": null
+      }
+    },
+    "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed43": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": null
+      }
+    },
+    "tv5m_in100_constlr0025_marsg035_const_b098_seed44": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": null
+      }
+    },
+    "tv5m_in100_constlr0025_marsg035_late_b098_b050_e36_e48_seed44": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": null
+      }
+    },
+    "tv5m_in100_coslr0025_marsg035_const_b098_seed42": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed42": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_marsg035_const_b098_seed43": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed43": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_marsg035_const_b098_seed44": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.98,
+        "decay_schedule": "none",
+        "decay_start_epoch": 1,
+        "decay_end_epoch": 1,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr0025_marsg035_late_b098_b050_e36_e48_seed44": {
+      "optimizer": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff_phase_decay",
+        "momentum": 0.98,
+        "momentum_end": 0.5,
+        "decay_schedule": "cosine",
+        "decay_start_epoch": 36,
+        "decay_end_epoch": 48,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_schedule": "constant",
+        "ns_steps_low": 5,
+        "ns_steps_high": 5,
+        "ns_warmup_epochs": 1,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p5_a0_fixed_confirm_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.5,
+          0.0
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.0,
+        "mu2_alpha_end": 0.0,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p5_a0_fixed_confirm_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.5,
+          0.0
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.0,
+        "mu2_alpha_end": 0.0,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p5_a0p2_fixed_confirm_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.5,
+          0.2
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.2,
+        "mu2_alpha_end": 0.2,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p5_a0p2_fixed_confirm_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.5,
+          0.2
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.2,
+        "mu2_alpha_end": 0.2,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p9_a0_fixed_confirm_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.9,
+          0.0
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.0,
+        "mu2_alpha_end": 0.0,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p9_a0_fixed_confirm_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.9,
+          0.0
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.0,
+        "mu2_alpha_end": 0.0,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p9_a0p2_fixed_confirm_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.9,
+          0.2
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.2,
+        "mu2_alpha_end": 0.2,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p9_a0p2_fixed_confirm_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.9,
+          0.2
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.2,
+        "mu2_alpha_end": 0.2,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p95_a0_fixed_confirm_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.95,
+          0.0
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.0,
+        "mu2_alpha_end": 0.0,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p95_a0_fixed_confirm_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.95,
+          0.0
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.0,
+        "mu2_alpha_end": 0.0,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p95_a0p2_fixed_confirm_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.95,
+          0.2
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.2,
+        "mu2_alpha_end": 0.2,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "mu2diag_tv5m_lr0p01_b0p95_a0p2_fixed_confirm_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_mu2sgd_adamw",
+        "mu2_betas": [
+          0.95,
+          0.2
+        ],
+        "ns_steps": 5,
+        "mu2_alpha_init": 0.2,
+        "mu2_alpha_end": 0.2,
+        "mu2_alpha_schedule": "none",
+        "mu2_alpha_start_epoch": 1,
+        "mu2_alpha_end_epoch": 1,
+        "matched_adamw_rms": 0.2,
+        "nesterov": true,
+        "preserve_mu2_estimator": false,
+        "diagnostics": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr01_marsg035_b09_seed42": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.9,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr01_marsg035_b09_seed43": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.9,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    },
+    "tv5m_in100_coslr01_marsg035_b09_seed44": {
+      "optimizer": {
+        "lr": 0.01,
+        "weight_decay": 0.0005,
+        "adamw_lr": 0.001,
+        "adamw_betas": [
+          0.9,
+          0.999
+        ],
+        "adamw_eps": 1e-08,
+        "adamw_weight_decay": 0.0,
+        "name": "muon_graddiff",
+        "momentum": 0.9,
+        "gamma": 0.35,
+        "gamma_end": 0.35,
+        "gamma_schedule": "none",
+        "gamma_start_epoch": 1,
+        "gamma_end_epoch": 1,
+        "ns_steps": 5,
+        "nesterov": true
+      },
+      "model": {
+        "name": "timm_tiny_vit",
+        "variant": "tiny_vit_5m_224",
+        "embed_dims": [
+          64,
+          128,
+          160,
+          320
+        ],
+        "depths": [
+          2,
+          2,
+          6,
+          2
+        ],
+        "num_heads": [
+          2,
+          4,
+          5,
+          10
+        ],
+        "window_sizes": [
+          7,
+          7,
+          14,
+          7
+        ],
+        "num_classes": 100,
+        "pretrained": false,
+        "drop_path_rate": 0.0,
+        "canonical_imagenet1k_parameter_count": 5392764,
+        "task_parameter_count": 5103864,
+        "expected_parameter_count": 5103864
+      },
+      "dataset": {
+        "name": "imagenet100",
+        "root": "./data/imagenet100",
+        "train_subdir": "train",
+        "val_subdir": "val",
+        "batch_size": 128,
+        "num_workers": 0,
+        "pin_memory": false,
+        "persistent_workers": false,
+        "eval_persistent_workers": false,
+        "multiprocessing_sharing_strategy": "file_system",
+        "train_shuffle": true,
+        "train_drop_last": true,
+        "eval_shuffle": false,
+        "eval_drop_last": false,
+        "image_size": 224,
+        "crop_pct": 0.875,
+        "recipe": "official",
+        "color_jitter": 0.4,
+        "auto_augment": "rand-m9-mstd0.5-inc1",
+        "interpolation": "bicubic",
+        "train_crop_scale": [
+          0.08,
+          1.0
+        ],
+        "train_crop_ratio": [
+          0.75,
+          1.3333333333333333
+        ],
+        "horizontal_flip_p": 0.5,
+        "random_erasing_p": 0.25,
+        "random_erasing_mode": "pixel",
+        "random_erasing_count": 1,
+        "normalization_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "normalization_std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "training": {
+        "epochs": 50,
+        "eval_interval": null,
+        "eval_every": 5,
+        "grad_clip": 1.0,
+        "gradient_accumulation_steps": 1,
+        "trainer": "clf",
+        "loss": "soft_target_cross_entropy",
+        "precision": "bf16_if_supported_else_fp32",
+        "tf32": true,
+        "cudnn_benchmark": true,
+        "deterministic_algorithms": false,
+        "metrics_to_log": [
+          "Train Loss",
+          "Train Accuracy",
+          "Test Loss",
+          "Test Accuracy",
+          "Test Top-5 Accuracy"
+        ],
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mix_probability": 1.0,
+        "cutmix_switch_probability": 0.5
+      },
+      "scheduler": {
+        "name": "cosine",
+        "eta_min_ratio": 0.05
+      }
+    }
+  }
+}

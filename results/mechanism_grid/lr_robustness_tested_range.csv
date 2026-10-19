@@ -1,0 +1,7 @@
+family,criterion_pct_all3seeds,tested_lrs_all3seeds_pass,max_tested_passing_lr,caveat
+MARS-inspired,70,"[0.005, 0.01]",0.01,two three-seed LRs only; historical auxiliary schedule differs
+MARS-inspired,80,[0.005],0.005,two three-seed LRs only; historical auxiliary schedule differs
+MARS-inspired,83,[0.005],0.005,two three-seed LRs only; historical auxiliary schedule differs
+Muon,70,[0.005],0.005,two three-seed LRs only; historical auxiliary schedule differs
+Muon,80,[0.005],0.005,two three-seed LRs only; historical auxiliary schedule differs
+Muon,83,[0.005],0.005,two three-seed LRs only; historical auxiliary schedule differs

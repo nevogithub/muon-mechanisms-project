@@ -1,0 +1,9 @@
+lr_policy,mars,momentum_policy,reached,mean_epoch_among_reached
+constant,0,constant,1,50.0
+constant,0,late,3,41.666666666666664
+constant,1,constant,0,
+constant,1,late,3,40.0
+cosine,0,constant,3,45.0
+cosine,0,late,3,41.666666666666664
+cosine,1,constant,3,41.666666666666664
+cosine,1,late,3,41.666666666666664

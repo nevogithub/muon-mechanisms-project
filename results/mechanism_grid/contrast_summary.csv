@@ -1,0 +1,23 @@
+contrast,interpretation,n,mean,sample_sd,minimum,maximum
+cross_block_mars_minus_alpha0_beta095_fixed_aux,"fixed auxiliary LR in both; historical MARS versus diagnostic alpha-zero controls, cross-block",3,43.47999741633733,20.687078718403274,20.91999650001526,61.559997498989105
+historical_mars_minus_muon__lr0.005,auxiliary LR policy differs: not an isolated MARS effect,3,0.32000144322713214,0.3143254426465548,0.04000067710876465,0.6600022315979004
+historical_mars_minus_muon__lr0.01,auxiliary LR policy differs: not an isolated MARS effect,3,16.839998960494995,3.5097567467478625,13.040000200271606,19.95999813079834
+late_minus_constant_beta__constant_lr__mars0,matched seed labels; not bitwise paired trajectories,3,1.5799979368845622,0.3304553173776794,1.239997148513794,1.8999993801116943
+late_minus_constant_beta__constant_lr__mars1,matched seed labels; not bitwise paired trajectories,3,2.340000867843628,0.27055493865062213,2.0799994468688965,2.619999647140503
+late_minus_constant_beta__cosine_lr__mars0,matched seed labels; not bitwise paired trajectories,3,-0.313335657119751,0.3126238345202211,-0.6000041961669922,0.019997358322143555
+late_minus_constant_beta__cosine_lr__mars1,matched seed labels; not bitwise paired trajectories,3,-0.5400002002716064,0.15874551302415224,-0.7200002670288086,-0.4199981689453125
+mars_addition_after_beta09_tuning,same auxiliary LR treatment; different optimizer classes and loader realizations,3,0.34000078837076825,0.36386820652273455,0.12000203132629395,0.7600009441375732
+mars_minus_plain__constant_lr__constant_beta,matched seed labels; not bitwise paired trajectories,3,-0.5800008773803711,0.8089534622785439,-1.500004529953003,0.020003318786621094
+mars_minus_plain__constant_lr__late_beta,matched seed labels; not bitwise paired trajectories,3,0.18000205357869467,0.2905202625411515,-0.12000203132629395,0.4600048065185547
+mars_minus_plain__cosine_lr__constant_beta,matched seed labels; not bitwise paired trajectories,3,0.5200008551279703,0.7623656068783256,-0.3600001335144043,0.98000168800354
+mars_minus_plain__cosine_lr__late_beta,matched seed labels; not bitwise paired trajectories,3,0.2933363119761149,0.5856059205039784,-0.23999810218811035,0.9200036525726318
+mars_x_momentum_DID__constant_lr,matched seed labels; not bitwise paired trajectories,3,0.7600029309590658,0.6010002174203265,0.18000006675720215,1.380002498626709
+mars_x_momentum_DID__cosine_lr,matched seed labels; not bitwise paired trajectories,3,-0.22666454315185547,0.45357815861014267,-0.7399976253509521,0.12000203132629395
+momentum_gain_constant_minus_cosine_lr__mars0,matched seed labels; not bitwise paired trajectories,3,1.8933335940043132,0.30022417785346284,1.5999972820281982,2.2000014781951904
+momentum_gain_constant_minus_cosine_lr__mars1,matched seed labels; not bitwise paired trajectories,3,2.8800010681152344,0.13856124829746955,2.799999713897705,3.0399978160858154
+mu2_alpha02_minus_0__beta0.5,matched seed labels; not bitwise paired trajectories,3,-0.026665131251017254,0.41101446872237607,-0.4199981689453125,0.40000081062316895
+mu2_alpha02_minus_0__beta0.9,matched seed labels; not bitwise paired trajectories,3,-0.026665131251017254,0.33125833023986734,-0.3399968147277832,0.31999945640563965
+mu2_alpha02_minus_0__beta0.95,matched seed labels; not bitwise paired trajectories,3,-30.926667029658955,20.55269748562029,-53.66000160574913,-13.659999892115593
+mu2_x_beta_DID__beta0.5_minus095,matched seed labels; not bitwise paired trajectories,3,30.900001898407936,20.41096913128349,14.060000702738762,53.60000357031822
+mu2_x_beta_DID__beta0.9_minus095,matched seed labels; not bitwise paired trajectories,3,30.900001898407936,20.238490800489057,13.979999348521233,53.32000479102135
+three_way_LR_x_MARS_x_momentum_DID,matched seed labels; not bitwise paired trajectories,3,0.9866674741109213,0.4239482359812783,0.6000041961669922,1.4400005340576172

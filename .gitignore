@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/
+results/exp_*/
+wandb/
+tmp/
+*.log
+*.aux
+*.out
